@@ -1,0 +1,37 @@
+2. The output are: 
+
+start
+end
+nextTick 1
+nextTick 2
+Promise...1
+Promise...2
+timeout 1
+timeout 2
+nextTick 3
+timeout 3
+
+3. The output are:
+
+Immediate
+timeout
+readFile....
+
+Sometime the output are:
+
+timeout
+Immediate
+readFile....
+
+
+4. The output when run in Node.js is undefined. When we run in the browser, the output is 'Hello World'. That is because in browser varaible defined with var are added to window object and this object(window) is accessable to var variable. In node, there is no window object and variable defined with var are not added to the properties of global object. 
+
+
+5. When execute the code, it will show the error. Error is "TypeError: getName is not a function". The error is happend because getName is assigned as a property to module.exports object and when we use require, we only got module.exports object. If we call getName.getName(), it will show correct answer. 
+
+
+6. The output in the console is "Josh Edward".
+
+7. The output in the console is "Josh Edward".
+
+8. The output in the console is "{ firstname: 'John', lastname: 'Smith' }"
